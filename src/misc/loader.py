@@ -12,7 +12,7 @@ def get_logger():
     logging.basicConfig(level = logging.INFO)
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.INFO)
-    handler = logging.FileHandler(fr"logging\{time.strftime('%Y_%m_%d-%H_%M_%S', time.localtime())}.log", 'w', 'utf-8')
+    handler = logging.FileHandler(fr"logging//{time.strftime('%Y_%m_%d-%H_%M_%S', time.localtime())}.log", 'w', 'utf-8')
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     handler.setFormatter(formatter)
     root_logger.addHandler(handler)
