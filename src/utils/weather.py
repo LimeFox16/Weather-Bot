@@ -24,7 +24,6 @@ class Weather:
                 }
             ) as response:
                 resp_data = await response.json()
-        print(resp_data['list'][-1]["dt_txt"])   
         return resp_data
 
     async def weather_info_today(self, data: dict) -> str:
