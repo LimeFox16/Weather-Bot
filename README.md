@@ -1,6 +1,6 @@
 ## Weather bot by LimeFox
 
-The bot works together with the OpenWeather API. The project is written for a Russian-speaking audience.
+Inline-bot is designed so that users can conveniently watch and send the current weather to other users. The user can interact with the bot from any Telegram chat. The bot sends up-to-date weather information using the openweather API. The project is written for a Russian-speaking audience.
 ___
 ## Table of contents
 
@@ -44,11 +44,19 @@ $ pip install -r requirements.txt
 ```
 
 After create `.env` file in the main directory based on the `.env.shared` file
-### 3. Get Bot token
+### 3. Setup Bot
 
-You can get a bot token from [@BotFather](https://t.me/BotFather)
+#### Get Bot token:
 
-After receiving the bot token, enter it into the BOT_TOKEN variable in the `.env` file
+- You can get a bot token from [@BotFather](https://t.me/BotFather)
+
+- After receiving the bot token, enter it into the BOT_TOKEN variable in the `.env` file
+
+#### Setup Bot from @BotFather:
+
+- Send /setinlinegeo to the BotFather chat.
+- On the keyboard, select your bot.
+- Next, select Enable
 
 ### 4. Get API key
 

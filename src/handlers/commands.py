@@ -7,7 +7,7 @@ from src.misc.loader import dp, bot
 async def start(message: types.Message):
     await bot.send_message(
         chat_id=message.from_user.id,
-        text="<i>Попробуй вписать мой никнейм в <b>любой чат</b> телеграмма</i>",
+        text=f"<i>Попробуй вписать мой никнейм <code>{(await bot.get_me()).username}</code> в <b>любой чат</b> телеграмма</i>",
         parse_mode="HTML"
     )
     
