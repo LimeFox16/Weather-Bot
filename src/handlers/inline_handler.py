@@ -1,6 +1,7 @@
+from aiogram.types import InlineQuery
+
 from src.misc.loader import dp, bot, logger
 from src.handlers.inline_content import get_inline_query_result
-from aiogram.types import InlineQuery
 
 @dp.inline_handler()
 async def inline_echo(inline_query: InlineQuery):

@@ -1,5 +1,6 @@
-from src.misc.loader import dp, bot
 from aiogram import types
+
+from src.misc.loader import dp, bot
 
 
 @dp.message_handler(commands="start")
